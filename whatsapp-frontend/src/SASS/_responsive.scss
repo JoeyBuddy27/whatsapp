@@ -1,0 +1,22 @@
+@import "./config";
+
+@include mobile {
+  .sidebar {
+    z-index: 2;
+    flex: 1;
+  }
+  .chat {
+    z-index: 1;
+    display: none;
+
+    &__show {
+      display: flex;
+    }
+  }
+
+  .app__body {
+    margin: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+  }
+}

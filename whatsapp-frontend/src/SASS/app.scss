@@ -1,0 +1,19 @@
+@import "./config";
+@import "./components";
+@import "./responsive";
+
+.app {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: #dadbd3;
+
+  &__body {
+    display: flex;
+    background: #ededed;
+    margin-top: -50px;
+    height: 90vh;
+    width: 90vw;
+    box-shadow: -1px 4px 20px -5px rgba(0, 0, 0, 0.5);
+  }
+}

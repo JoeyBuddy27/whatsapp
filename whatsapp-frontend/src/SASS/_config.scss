@@ -1,0 +1,20 @@
+$light-green: #25d366;
+
+$mobileWidth: 768px;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica";
+}
+
+//media query for mobile
+@mixin mobile {
+  @media (max-width: $mobileWidth) {
+    @content;
+  }
+}
+
+@mixin transition-ease {
+  transition: 0.3s all ease-in-out;
+}
